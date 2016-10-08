@@ -73,7 +73,7 @@ sassLint.format = function (writable) {
       writable.write(result);
     }
     else {
-      lint.outputResults(file.sassLint, file.sassConfig);
+      lint.outputResults(file.sassLint, file.userOptions);
     }
 
     this.push(file);
